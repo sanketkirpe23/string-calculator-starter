@@ -22,5 +22,12 @@ class StringCalculatorShould {
     void string_with_multiple_numbers_should_return_sum_as_int() {
     	StringCalculator calculator = new StringCalculator();
     	assertEquals(10, calculator.add("1,2,3,4"));
+    	
+    	
+    }
+    @Test
+    void string_with_newline_should_return_sum_as_int() {
+    	StringCalculator calculator = new StringCalculator();
+    	assertEquals(10, calculator.add("1\n2,3\n4"));
     }
 }

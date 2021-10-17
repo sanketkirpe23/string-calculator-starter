@@ -17,4 +17,10 @@ class StringCalculatorShould {
         StringCalculator stringCalculator = new StringCalculator();
         assertEquals(1, stringCalculator.add("1"));
     }
+    
+    @Test
+    void string_with_multiple_numbers_should_return_sum_as_int() {
+    	StringCalculator calculator = new StringCalculator();
+    	assertEquals(10, calculator.add("1,2,3,4"));
+    }
 }
